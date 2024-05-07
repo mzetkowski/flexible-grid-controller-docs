@@ -558,7 +558,7 @@ public class GameController : MonoBehaviour
 ### Sample 1
 The first sample scene centers on fundamentals - grid navigation. The key decision here is choosing the right `Interactable` interface to implement. Focus on two factors: the grid layout and the actions you want to enable on your tiles. For this scene, with our 2D grid and tiles supporting selection and clicking, the `IBasicInteractable2D` interface fits perfectly!
 
-The interface is implemented as a separate component - no need to edit the existing codebase. The implemented methods, `OnClick`, `OnSelected` and `OnDeselected` simply forward the actions to methods already existing on the underlying Tile. Tile. The GetGridIndex method uses the Tile's Coords field to determine its position within the grid. The new component is attached to the original Tile prefab.
+The interface is implemented as a separate component - no need to edit the existing codebase. The implemented methods, `OnClick`, `OnSelected` and `OnDeselected` simply forward the actions to methods already existing on the underlying Tile.  The `GetGridIndex` method uses the Tile's Coords field to determine its position within the grid. The new component is attached to the original Tile prefab.
 ```c#
 public class TileInteractable : MonoBehaviour, IBasicInteractable2D
 {
