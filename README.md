@@ -1,4 +1,4 @@
-# Flexible Grid Controller v1.0.0 Documentation
+# Flexible Grid Controller v1.0.1 Documentation
 
 ## Table of Contents
 1. [Introduction](#introduction)
